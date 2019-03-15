@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:alpha="0.85">
+
+        <!-- 英雄部分信息  -->
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/add_relativelayout"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="灼热之人"
+                android:textColor="#FFD700"
+                android:id="@+id/popup_title"/>
+
+            <TextView
+                android:id="@+id/popup_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_title"
+                android:text="廉颇"
+                android:textSize="50dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/popup_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/popup_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="70dp"
+                android:textColor="#DC143C"
+                android:textSize="15sp"
+                android:text="坦克"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:id="@+id/popup_avater"
+                android:src="@mipmap/lp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="5dp"
+            android:src="#1E000000"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生存能力"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#1c8fea"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/image1"
+                android:id="@+id/popup_image1" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/popup_seekBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bsb_bubble_color="#1c8fea"
+                app:bsb_bubble_text_color="#ffffff"
+                app:bsb_max="0"
+                app:bsb_min="100"
+                app:bsb_progress="20"
+                app:bsb_second_track_color="#1c8fea"
+                app:bsb_track_color="	#A9A9A9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:background="#00000000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="攻击伤害"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#e7ca63"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/image2"
+                android:id="@+id/popup_image2" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/popup_seekBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bsb_bubble_color="#e7ca63"
+                app:bsb_bubble_text_color="#ffffff"
+                app:bsb_max="0"
+                app:bsb_min="100"
+                app:bsb_progress="20"
+                app:bsb_second_track_color="#e7ca63"
+                app:bsb_track_color="	#A9A9A9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="技能效果"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#5dd473"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/image3"
+                android:id="@+id/popup_image3" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/popup_seekBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bsb_bubble_color="#5dd473"
+                app:bsb_bubble_text_color="#ffffff"
+                app:bsb_max="0"
+                app:bsb_min="100"
+                app:bsb_progress="20"
+                app:bsb_second_track_color="#5dd473"
+                app:bsb_track_color="	#A9A9A9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上手难度"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#e84a33"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/image4"
+                android:id="@+id/popup_image4" />
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/popup_seekBar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bsb_bubble_color="#e84a33"
+                app:bsb_bubble_text_color="#ffffff"
+                app:bsb_max="0"
+                app:bsb_min="100"
+                app:bsb_progress="20"
+                app:bsb_second_track_color="#e84a33"
+                app:bsb_track_color="	#A9A9A9" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="5dp"
+            android:src="#1E000000"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/popup_save"
+                android:id="@+id/popup_add"
+                android:text="Add"
+                android:textColor="#0000CD"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/popup_save"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/popup_add"
+                android:text="Save"
+                android:textColor="#00BFFF"/>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>

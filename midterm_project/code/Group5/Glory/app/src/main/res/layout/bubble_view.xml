@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:maxWidth="200dp"
+    android:maxHeight="100dp">
+    <com.cpiz.android.bubbleview.BubbleLinearLayout
+        android:id="@+id/bubbleLinearLayout"
+        android:layout_width = "match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_height = "wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/equipName"
+                android:layout_marginEnd="10dp"
+                android:textSize="@dimen/middleTextSize"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/equipType"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/equipName"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/selling_price"
+                android:textColor="@color/colorGold"
+                android:layout_below="@id/equipType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/purchase_price"
+                android:textColor="@color/colorGold"
+                android:layout_below="@id/selling_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/equipDescription"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBlue"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/equipPassive"
+            android:textColor="@color/colorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.cpiz.android.bubbleview.BubbleLinearLayout>
+</ScrollView>

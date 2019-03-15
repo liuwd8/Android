@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/albumSize"
+        android:layout_height="@dimen/albumSize"
+        android:id="@+id/albumImage"
+        android:src="@mipmap/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/singer"
+        android:id="@+id/name"
+        android:textAlignment="center"
+        android:textSize="@dimen/largeTextSize"
+        android:layout_marginBottom="@dimen/smallMargin"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/singer"
+        android:textSize="@dimen/smallTextSize"
+        android:layout_marginBottom="@dimen/middleMargin"
+        app:layout_constraintBottom_toTopOf="@id/percentage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultStartTime"
+        android:textSize="@dimen/middleTextSize"
+        android:layout_marginStart="@dimen/middleMargin"
+        app:layout_constraintBottom_toTopOf="@id/openFile"
+        app:layout_constraintStart_toStartOf="@id/openFile"
+        android:layout_marginBottom="@dimen/middleMargin"
+        android:id="@+id/timeNow" />
+
+    <SeekBar
+        android:id="@+id/percentage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/middleMargin"
+        android:layout_marginEnd="@dimen/middleMargin"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/timeNow"
+        app:layout_constraintEnd_toStartOf="@id/timeTotal"
+        app:layout_constraintStart_toEndOf="@id/timeNow"
+        app:layout_constraintTop_toTopOf="@id/timeNow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultStartTime"
+        android:id="@+id/timeTotal"
+        android:textSize="@dimen/middleTextSize"
+        android:layout_marginEnd="@dimen/middleMargin"
+        app:layout_constraintBottom_toBottomOf="@id/timeNow"
+        app:layout_constraintTop_toTopOf="@id/timeNow"
+        app:layout_constraintEnd_toEndOf="@id/back"/>
+
+    <ImageView
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:src="@mipmap/file"
+        android:contentDescription="@string/file"
+        android:onClick="openFile"
+        android:id="@+id/openFile"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/play"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:src="@mipmap/play"
+        android:onClick="playMusic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stop"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/openFile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:src="@mipmap/stop"
+        android:id="@+id/stop"
+        android:onClick="stopMusic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/play"
+        app:layout_constraintEnd_toStartOf="@id/back"/>
+
+    <ImageView
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:src="@mipmap/back"
+        android:id="@+id/back"
+        android:contentDescription="@string/exitPlayer"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:onClick="exitPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

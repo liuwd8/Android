@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:onClick="clickBackButton"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/back"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:onClick="clickStarButton"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/empty_star"
+            android:id="@+id/star"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_alignBottom="@id/star"
+            android:layout_alignLeft="@id/back"
+            android:id="@+id/detailFoodName"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linearlayout_border"
+            android:id="@+id/middle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/textview_border">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="20sp"
+                        android:textColor="#D5000000"
+                        android:id="@+id/detailFoodType"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="20sp"
+                        android:textColor="#8A000000"
+                        android:id="@+id/detailNutrients"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:onClick="clickCollectionButton"
+                    android:background="@drawable/image_border"
+                    android:paddingLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/collect"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#D5000000"
+                android:text="更多资料"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailList"
+            android:layout_below="@id/middle"
+            android:layout_marginHorizontal="10dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

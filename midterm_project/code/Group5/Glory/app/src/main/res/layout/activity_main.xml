@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--content-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/mainPageAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mainPageTopBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000">
+                <Button
+                    android:id="@+id/mainPageHerosClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:text="类别"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/shape_button"
+                    android:textSize="15sp"
+                    android:layout_margin="5dp"
+                    android:alpha="0.8"/>
+
+                <SearchView
+                    android:id="@+id/mainPageSearchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:iconifiedByDefault="false"
+                    android:layout_toRightOf="@id/mainPageHerosClass"
+                    android:background="#00000000"
+                    android:layout_margin="5dp"
+                    android:focusable="true"/>
+
+            </RelativeLayout>
+            <android.support.constraint.ConstraintLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <com.ryan.rv_gallery.GalleryRecyclerView
+                    android:id="@+id/mainPageRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:helper="LinearSnapHelper"/>
+
+                <com.example.liuyh73.glory.MyFab
+                    android:id="@+id/fab"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:alpha="0.6"/>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/Base.Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mainPageLoad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/loadpic0"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@color/colorWhite"
+        android:alpha="0.6"/>
+</android.support.v4.widget.DrawerLayout>

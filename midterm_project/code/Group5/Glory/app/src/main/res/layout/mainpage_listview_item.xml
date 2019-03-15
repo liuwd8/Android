@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/mainPage_listView_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="战士"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:padding="2dp"/>
+</RelativeLayout>

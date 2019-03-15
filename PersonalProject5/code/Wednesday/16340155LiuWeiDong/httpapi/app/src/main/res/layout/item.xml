@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        app:contentPadding="5dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:id="@+id/cover"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleLarge"
+                android:id="@+id/progressBar"
+                app:layout_constraintTop_toTopOf="@id/cover"
+                app:layout_constraintBottom_toBottomOf="@id/cover"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                app:layout_constraintTop_toBottomOf="@id/cover"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/play"
+                android:textSize="@dimen/textSizeLittle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seekBar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment"
+                android:textSize="@dimen/textSizeLittle"
+                android:layout_marginStart="@dimen/marginLittle"
+                app:layout_constraintStart_toEndOf="@id/play"
+                app:layout_constraintTop_toBottomOf="@id/seekBar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/duration"
+                android:layout_marginStart="@dimen/marginLittle"
+                android:textSize="@dimen/textSizeLittle"
+                app:layout_constraintStart_toEndOf="@id/comment"
+                app:layout_constraintTop_toBottomOf="@id/seekBar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/create"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="@dimen/textSizeLittle"
+                app:layout_constraintTop_toBottomOf="@id/seekBar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textSize="@dimen/textSizeMiddle"
+                app:layout_constraintTop_toBottomOf="@id/play"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        app:contentPadding="5dp"
+        app:cardBackgroundColor="@color/color1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:textAlignment="center"
+            android:textSize="@dimen/textSizeLarge"
+            android:background="@color/color2"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

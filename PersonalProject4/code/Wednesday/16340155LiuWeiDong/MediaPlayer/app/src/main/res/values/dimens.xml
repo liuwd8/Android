@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonSize">50dp</dimen>
+    <dimen name="smallMargin">5dp</dimen>
+    <dimen name="middleMargin">10dp</dimen>
+    <dimen name="largeMargin">15dp</dimen>
+    <dimen name="smallTextSize">15sp</dimen>
+    <dimen name="middleTextSize">20sp</dimen>
+    <dimen name="largeTextSize">25sp</dimen>
+    <dimen name="albumSize">300dp</dimen>
+</resources>

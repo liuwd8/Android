@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/add_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"
+            android:src="@mipmap/search"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/line_shape"/>
+
+    </LinearLayout>
+
+    <com.example.liuyh73.glory.CustomSwipeRefreshLayout
+        android:id="@+id/mySwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:background="@mipmap/background"
+            android:id="@+id/SwipeMenuListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.example.liuyh73.glory.CustomSwipeRefreshLayout>
+</LinearLayout>

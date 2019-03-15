@@ -1,0 +1,10 @@
+INSERT INTO `present` VALUES ('162', '娜可露露', '刺客');
+INSERT INTO `present` VALUES ('199', '公孙离', '射手');
+INSERT INTO `present` VALUES ('141', '貂蝉', '法师');
+INSERT INTO `present` VALUES ('106', '小乔', '法师');
+INSERT INTO `present` VALUES ('107', '赵云', '战士');
+INSERT INTO `present` VALUES ('108', '墨子', '法师');
+INSERT INTO `present` VALUES ('109', '妲己', '法师');
+INSERT INTO `present` VALUES ('110', '嬴政', '法师');
+INSERT INTO `present` VALUES ('111', '孙尚香', '射手');
+INSERT INTO `present` VALUES ('157', '不知火舞', '法师');

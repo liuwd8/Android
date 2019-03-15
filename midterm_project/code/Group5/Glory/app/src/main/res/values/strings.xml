@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Glory</string>
+    <string name="abilitiesItem1">生存</string>
+    <string name="abilitiesItem2">攻击</string>
+    <string name="abilitiesItem3">技能</string>
+    <string name="abilitiesItem4">难度</string>
+    <string name="detailSkillIntroduce">技能介绍</string>
+    <string name="detailOutfitSuggestion">推荐出装</string>
+    <string name="detailOutfitSuggestion1">推荐出装一</string>
+    <string name="detailOutfitSuggestion2">推荐出装二</string>
+    <string name="preTag">myCardFragmentRootViewTag</string>
+</resources>

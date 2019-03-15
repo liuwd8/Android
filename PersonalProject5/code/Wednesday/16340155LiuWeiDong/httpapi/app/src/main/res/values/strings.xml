@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">httpapi</string>
+    <string name="searchHint">input user id</string>
+    <string name="search">搜索</string>
+    <string name="play">播放量: </string>
+    <string name="comment">评论: </string>
+    <string name="duration">时长: </string>
+    <string name="create">创建时间: </string>
+    <string name="bilibili">Bilibili API</string>
+    <string name="github">Github API</string>
+    <string name="projectName">项目名: %s</string>
+    <string name="projectId">项目id: %d</string>
+    <string name="problem">存在问题: %d</string>
+    <string name="description">项目描述: %s</string>
+    <string name="token">输入Token</string>
+    <string name="title">输入Title</string>
+    <string name="body">请输入Body</string>
+    <string name="addIssue">增加Issue</string>
+    <string name="issueName">Title: %s</string>
+    <string name="createTime">创建时间: %s</string>
+    <string name="problemState">问题状态: %s</string>
+    <string name="problemDescription">问题描述: %s</string>
+</resources>

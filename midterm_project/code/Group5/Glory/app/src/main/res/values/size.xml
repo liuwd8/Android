@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abilitiesTextSize">20sp</dimen>
+    <dimen name="abilitiesHeightSize">25dp</dimen>
+    <dimen name="donut_width_height_size">2dp</dimen>
+    <dimen name="abilities_margin_start">15dp</dimen>
+    <dimen name="donut_margin_start">2dp</dimen>
+    <dimen name="CoverNameSize">15sp</dimen>
+    <dimen name="detailIntroduceSize">30sp</dimen>
+    <dimen name="detailSuggestionMargin">10dp</dimen>
+    <dimen name="HorizontalListViewItemMargin">5dp</dimen>
+    <dimen name="skinAvatarSize">40dp</dimen>
+    <dimen name="pagerSlidingTabStripSize">30dp</dimen>
+    <dimen name="introduceMarginHorizontalSize">20dp</dimen>
+    <dimen name="introduceMarginTopSize">10dp</dimen>
+    <dimen name="skillNameWidth">130dp</dimen>
+    <dimen name="skillNameTextSize">18sp</dimen>
+    <dimen name="skillTipsPaddingHorizontalSize">5dp</dimen>
+    <dimen name="skillTipsMarginTopSize">20dp</dimen>
+    <dimen name="detailSkillRecoveryTimeWidth">70dp</dimen>
+    <dimen name="middleTextSize">20sp</dimen>
+    <dimen name="bottomMargin">30dp</dimen>
+</resources>
